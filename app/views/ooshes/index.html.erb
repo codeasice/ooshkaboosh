@@ -1,0 +1,29 @@
+<h1>Listing ooshes</h1>
+
+<table>
+  <tr>
+    <th>Full text</th>
+    <th>Keyword</th>
+    <th>Extra text</th>
+    <th>Stamp</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ooshes.each do |oosh| %>
+  <tr>
+    <td><%= oosh.full_text %></td>
+    <td><%= oosh.keyword %></td>
+    <td><%= oosh.extra_text %></td>
+    <td><%= oosh.stamp %></td>
+    <td><%= link_to 'Show', oosh %></td>
+    <td><%= link_to 'Edit', edit_oosh_path(oosh) %></td>
+    <td><%= link_to 'Destroy', oosh, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Oosh', new_oosh_path %>

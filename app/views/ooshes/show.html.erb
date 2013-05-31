@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Full text:</b>
+  <%= @oosh.full_text %>
+</p>
+
+<p>
+  <b>Keyword:</b>
+  <%= @oosh.keyword %>
+</p>
+
+<p>
+  <b>Extra text:</b>
+  <%= @oosh.extra_text %>
+</p>
+
+<p>
+  <b>Stamp:</b>
+  <%= @oosh.stamp %>
+</p>
+
+
+<%= link_to 'Edit', edit_oosh_path(@oosh) %> |
+<%= link_to 'Back', ooshes_path %>

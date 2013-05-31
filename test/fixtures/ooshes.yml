@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  full_text: MyString
+  keyword: MyString
+  extra_text: MyString
+  stamp: 2013-05-27 17:10:52
+
+two:
+  full_text: MyString
+  keyword: MyString
+  extra_text: MyString
+  stamp: 2013-05-27 17:10:52
